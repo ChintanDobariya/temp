@@ -1,0 +1,177 @@
+body{
+	font-family: Arial;
+	margin:0px;
+	padding:20px;
+	background-color: #efefef;
+}
+*{
+	box-sizing: border-box;
+}
+.row{
+	content: '';
+	display: table;
+	clear: both;
+}
+.header{
+	background-color: #fff;
+	padding:40px;
+}
+.header h1{
+	text-align: center;
+	font-size:50px;
+	color:#000;
+	margin:10px;
+	
+}
+.anim{
+	font-size:50px;
+	animation: animation1 1s ease-out;
+}
+@keyframes animation1{
+	0%{font-size: 0px;}
+	50%{font-size: 70px;}
+	100%{font-size: 50px;}
+}
+.nav{
+	margin: 0px;
+	height: 35px;
+	background-color: #000;
+	font-size: 20px;
+	content: "";
+}
+.nav li{
+	float: left;
+	list-style: none;
+	padding: 6px 89px;
+	
+}
+.nav li:hover{
+	background-color: white;
+	color: #000;
+}
+.nav a{
+	text-decoration: none;
+	color: white;
+}
+.nav 	a:hover{
+	color: black;
+}
+
+
+h2{
+	color:#000000;
+margin:1.5 0px;	
+}
+.col1{
+float: left;
+width: 75%;	
+}
+
+.col2{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+}
+.post{
+	padding: 20px;
+	background-color: #ffffff;
+	margin-top:20px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.post a{
+	text-decoration: none;
+	color: black;
+}
+.post img{
+	width: 100%;
+}
+.wrap{
+	position: relative;
+	float:left;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right: 0;
+	opacity: 0;
+	overflow:hidden ;
+	width: 100%;
+	height: 100%;
+	transition: .2s ease;
+}
+.overlay a{
+	color: white;
+	
+}
+.wrap:hover .overlay {
+	bottom: 0;
+	opacity: 1;
+  }
+  .wrap:hover img{
+	filter: blur(5px);
+  }
+.btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 40px;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: black;
+	opacity: 1;
+	border: none;
+}
+
+.col2 img{
+	margin-bottom: 10px;
+}
+
+.icon{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.footer{
+	background-color: #000;
+	color:white;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+.heading{
+	font-size: 40px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.con{
+	font-size: 16px;
+	padding:0 5%;
+}
+.post h2{
+	padding:0 5%;
+}
+
+@media only screen and (max-width:1080px){
+	.col1,.col2{
+    width: 100%;
+    padding: 0px;
+	}
+	.nav li{
+	padding: 6px 52px;
+		
+	}	
+}
+
+@media only screen and (max-width:800px){
+	.nav li{
+	padding: 6px 22px;
+		
+	}	
+}
